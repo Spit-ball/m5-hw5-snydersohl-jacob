@@ -1,17 +1,29 @@
+html,
+body {
+  min-height: 100%;
+}
+
 * {
-  margin: 0%;
-  padding: 0%;
-  border: 0%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 1%;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid green;
+}
+
+h1 {
+  font-size: 20px;
+  margin-left: 10%;
+  color: green;
 }
 
 body {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.08' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  margin: 10%;
-}
-
-header {
-  margin-bottom: 5%;
 }
 
 section.main,
@@ -22,13 +34,40 @@ header {
 
 section.main {
   float: left;
-  width: 70%;
+  width: 40%;
+  margin-left: 30%;
+  padding-bottom: 2%;
 }
 
-section.sidebar {
+section.main > h2 {
+  margin-left: 19px;
+  padding-top: 5px;
+}
+
+div.border-line {
+  border-bottom: 1px solid green;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+aside {
+  display: block;
   float: right;
-  text-align: right;
-  width: 30%;
+  text-align: center;
+  background-color: #ffffff;
+  margin-right: 10%;
+  margin-left: auto;
+  padding: 5px;
+}
+
+aside > h2 {
+  text-align: center;
+  color: black;
+}
+
+aside > a {
+  padding: 5px;
+  filter: drop-shadow(3px 5px rgba(2, 3, 2, 0.3));
 }
 
 #topleft-name,
@@ -48,6 +87,46 @@ nav {
   text-align: right;
 }
 
+nav > a {
+  font-size: 20px;
+}
+
 #me {
   float: left;
+  padding: 5px;
+  margin: 2% 2% 0.5% 3%;
+  filter: drop-shadow(3px 5px rgba(2, 3, 2, 0.3));
+}
+
+.main > p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section.sidebar img,
+#github,
+#linkedin,
+#stack-overflow {
+  display: inline-block;
+  width: 40px;
+  background-color: #ffffff;
+  padding: 2%;
+  margin-left: 8%;
+  align-content: center;
+}
+
+footer {
+  z-index: 1;
+  background-color: green;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  left: -3px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-style: ridge;
+  border-top: 5px ridge black;
+  padding-top: 15px;
 }
